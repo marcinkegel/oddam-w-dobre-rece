@@ -1,7 +1,8 @@
 import React from 'react';
+import HomeNavHeader from "./HomeNavHeader";
 
 const Home = () => (
-    <h1>Home</h1>
+        <HomeNavHeader/>
 )
 
 export default Home;

@@ -2,5 +2,9 @@
 @import './settings/normalize';
 @import './settings/reset';
 @import './settings/colors';
+@import './settings/variables';
 
 @import './components/HomeNavHeader';
+@import './components/Decoration';
+@import './components/ButtonBox';
+@import './components/HomeThreeColumns';

@@ -1,0 +1,25 @@
+.HomeThreeColumns--container{
+  background-image: url("../../assets/3 Columns Background.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px 50px;
+  text-align: center;
+  color: $color-5;
+
+  .HomeThreeColumns--number{
+    color: $color-2;
+    font-size: 4rem;
+    margin: 10px;
+  }
+  .HomeThreeColumns--description{
+    margin: 10px;
+  }
+  .HomeThreeColumns--text{
+    margin: 10px;
+    max-width: 20vw;
+
+  }
+
+
+}

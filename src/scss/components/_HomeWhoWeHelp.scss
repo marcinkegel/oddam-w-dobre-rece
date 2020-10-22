@@ -1,0 +1,18 @@
+.homeWhoWeHelp--container{
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homeWhoWeHelp{
+  &--header{
+    margin: 5vh 0 10px 0;
+    font-size: 2.5rem;
+  }
+  &--options--item{
+    margin: 0 0 10vh 20px;
+    padding: 20px 40px;
+
+  }
+}

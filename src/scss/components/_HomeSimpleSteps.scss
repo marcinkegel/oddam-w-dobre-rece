@@ -1,0 +1,69 @@
+.HomeSimpleSteps {
+  &--container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 65vh;
+    width: 100vw;
+    padding: 50px 0;
+  }
+  &--header{
+    font-size: 2.5rem;
+    color: $color-5;
+  }
+  &--steps--container{
+    color: $color-4;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    min-height: 200px;
+    margin-bottom: 50px;
+    background-color: $color-main;
+  }
+  &--step{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    &--title{
+      margin-top: 140px;
+      margin-bottom: 40px;
+      &:after{
+        content:" ";
+        border-bottom: 1px solid #707070;
+        height: 10px;
+        width: 60%;
+        position: absolute;
+        top: 170px;
+        left: 20%;
+      }
+    }
+    &--title--1{
+      &:before {
+        content: url("../../assets/Icon-1.svg");
+        @include icon-position;
+      }
+    }
+    &--title--2{
+      &:before {
+        content: url("../../assets/Icon-2.svg");
+        @include icon-position;
+      }
+    }
+    &--title--3{
+      &:before {
+        content: url("../../assets/Icon-3.svg");
+        @include icon-position;
+      }
+    }
+    &--title--4{
+      &:before {
+        content: url("../../assets/Icon-4.svg");
+        @include icon-position;
+      }
+    }
+    &--text{
+      margin-bottom: 60px;
+    }
+
+  }
+}

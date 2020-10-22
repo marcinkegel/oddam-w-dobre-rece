@@ -1,2 +1,8 @@
 $transition-basic: .2s ease-in-out;
 $border-basic: 0.75px solid $color-4;
+
+@mixin icon-position{
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 42px);
+}

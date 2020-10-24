@@ -35,7 +35,10 @@ const Contact = () => {
     }
 
 
-
+    function validateEmail(email) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
 
     const validate = () => {
         let valid = true;
@@ -45,7 +48,7 @@ const Contact = () => {
         } else {
             setNameError(null);
         }
-        if (!form.email || form.email.indexOf("@") === -1) {
+        if (!form.email || !validateEmail(form.email)) {
             setEmailError('Podany email jest nieprawidłowy');
             return false;
         } else {

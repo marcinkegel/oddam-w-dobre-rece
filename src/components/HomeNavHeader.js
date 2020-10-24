@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Switch,Route,Link } from "react-router-dom";
 import {Link as LinkScroll} from "react-scroll"
 import Decoration from "./Decoration";
 import ButtonBox from "./ButtonBox";
+import Register from "./Register";
+import Login from "./Login";
 const HomeNavHeader = () => {
 
     return (
@@ -10,9 +12,8 @@ const HomeNavHeader = () => {
             <div className="header--background--container"></div>
             <div className="header--text--container">
                 <nav className="header--loginNav">
-                    <Link className="header--loginNav--item" to={""}>Zaloguj się</Link>
-                    <Link className="header--loginNav--item" to={""}>Załóż konto</Link>
-
+                    <Link className="header--loginNav--item" to={"/logowanie"}>Zaloguj się</Link>
+                    <Link className="header--loginNav--item" to={"/rejestracja"}>Załóż konto</Link>
                 </nav>
                 <nav className="header--homeNav">
                     <LinkScroll duration={700} smooth={true} spy={true} className="header--homeNav--item" to="start">Start</LinkScroll>

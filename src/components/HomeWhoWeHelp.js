@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Decoration from "./Decoration";
-import ButtonBox from "./ButtonBox";
+
 
 const HomeWhoWeHelp = () => {
 
@@ -30,7 +30,7 @@ const HomeWhoWeHelp = () => {
 
 
     return (
-        <div className="homeWhoWeHelp--container">
+        <div id="help" className="homeWhoWeHelp--container">
             <h2 className="homeWhoWeHelp--header">Komu Pomagamy?</h2>
             <Decoration/>
             <div className="homeWhoWeHelp--options">

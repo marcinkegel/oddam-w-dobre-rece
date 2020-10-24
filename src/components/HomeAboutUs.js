@@ -4,7 +4,7 @@ import Decoration from "./Decoration";
 const HomeAboutUs = () => {
 
     return (
-        <div className="aboutUs--container">
+        <div id="about" className="aboutUs--container">
             <div className="aboutUs--text">
                 <h2 className="aboutUs--text--header">O nas</h2>
                 <Decoration/>

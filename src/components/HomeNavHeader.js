@@ -6,7 +6,7 @@ import ButtonBox from "./ButtonBox";
 const HomeNavHeader = () => {
 
     return (
-        <div className="header--container">
+        <div id="start" className="header--container">
             <div className="header--background--container"></div>
             <div className="header--text--container">
                 <nav className="header--loginNav">
@@ -15,11 +15,11 @@ const HomeNavHeader = () => {
 
                 </nav>
                 <nav className="header--homeNav">
-                    <LinkScroll className="header--homeNav--item" to={""}>Start</LinkScroll>
-                    <LinkScroll className="header--homeNav--item" to={""}>O co chodzi?</LinkScroll>
-                    <LinkScroll className="header--homeNav--item" to={""}>O nas</LinkScroll>
-                    <LinkScroll className="header--homeNav--item" to={""}>Fundacje i organizacje</LinkScroll>
-                    <LinkScroll className="header--homeNav--item" to={""}>Kontakt</LinkScroll>
+                    <LinkScroll duration={700} smooth={true} spy={true} className="header--homeNav--item" to="start">Start</LinkScroll>
+                    <LinkScroll duration={700} smooth={true} spy={true} className="header--homeNav--item" to="simpleSteps">O co chodzi?</LinkScroll>
+                    <LinkScroll duration={700} smooth={true} spy={true} className="header--homeNav--item" to="about">O nas</LinkScroll>
+                    <LinkScroll duration={700} smooth={true} spy={true} className="header--homeNav--item" to="help">Fundacje i organizacje</LinkScroll>
+                    <LinkScroll duration={700} smooth={true} spy={true} className="header--homeNav--item" to="contact">Kontakt</LinkScroll>
                 </nav>
                 <h1 className="header--title"> Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</h1>
                 <Decoration/>

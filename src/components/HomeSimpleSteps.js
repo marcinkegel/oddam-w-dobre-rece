@@ -5,7 +5,7 @@ import ButtonBox from "./ButtonBox";
 const HomeSimpleSteps = () => {
 
     return (
-        <div itemID="steps" className="HomeSimpleSteps--container">
+        <div id="simpleSteps" className="HomeSimpleSteps--container">
             <h2 className="HomeSimpleSteps--header">Wystarczą 4 proste kroki</h2>
             <Decoration/>
             <div className="HomeSimpleSteps--steps--container">

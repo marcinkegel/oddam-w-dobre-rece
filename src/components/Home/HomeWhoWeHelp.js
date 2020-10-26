@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import Decoration from "./Decoration";
+import Decoration from "../Decoration";
+import HomeFoundations from "./HomeFoundations";
 
 
 const HomeWhoWeHelp = () => {
@@ -9,7 +10,9 @@ const HomeWhoWeHelp = () => {
 
     const foundations = ()=>{
         return(
-            <div>FUNDACJE</div>
+            <div>FUNDACJE
+                <HomeFoundations/>
+            </div>
         )
     }
 

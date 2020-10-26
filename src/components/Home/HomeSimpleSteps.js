@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import Decoration from "./Decoration";
-import ButtonBox from "./ButtonBox";
+import Decoration from "../Decoration";
+import ButtonBox from "../ButtonBox";
 
 const HomeSimpleSteps = () => {
 

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import Decoration from "./Decoration";
+import Decoration from "../Decoration";
 
 const HomeAboutUs = () => {
 

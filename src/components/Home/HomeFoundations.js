@@ -33,15 +33,31 @@ const HomeFoundations = () => {
             name: "Fundacja “Lorem Ipsum 5”",
             aim: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
             needs: "Egestas, sed, tempus"
-        }
+        },
+        {
+            id: 5,
+            name: "Fundacja “Lorem Ipsum 6”",
+            aim: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            needs: "Egestas, sed, tempus"
+        },
+        {
+            id: 6,
+            name: "Fundacja “Lorem Ipsum 7”",
+            aim: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            needs: "Egestas, sed, tempus"
+        },
+        {
+            id: 7,
+            name: "Fundacja “Lorem Ipsum 8”",
+            aim: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            needs: "Egestas, sed, tempus"
         // },
         // {
-        //     id: 5,
-        //     name: "Fundacja “Lorem Ipsum 6”",
+        //     id: 8,
+        //     name: "Fundacja “Lorem Ipsum 9”",
         //     aim: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
         //     needs: "Egestas, sed, tempus"
-        // }
-
+        }
         ]
 
     );
@@ -53,7 +69,6 @@ const HomeFoundations = () => {
     }
 
 
-
     const pagination = ()=>{
         let amountOfPages = Math.ceil(foundations.length/3);
         let pages=[];
@@ -63,7 +78,7 @@ const HomeFoundations = () => {
         return(
             pages.map(e=>{
                return(
-                   <p id={e} onClick={e=>handlePageClick(e)} key={e}>{e}</p>
+                   <button className="homeFoundations--list--page" id={e} onClick={e=>handlePageClick(e)} key={e}>{e}</button>
                )
             })
         )
@@ -73,70 +88,59 @@ const HomeFoundations = () => {
 
     return (
         <div className="homeFoundations--container">
-
-
-
-            <div className="homeFoundations--list">
-
-                <div key={foundations[(pageCounter * 3)-3].id} className="homeFoundations--list--item">
-                    <div className="homeFoundations--list--name--container">
-                        <h2 className="homeFoundations--list--name">
-                            {foundations[(pageCounter * 3)-3].name}
-                        </h2>
-                        <p className="homeFoundations--list--aim">
-                            {foundations[(pageCounter * 3)-3].aim}
+            <div className="homeFoundations--info">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują. </div>
+            <div className="homeFoundations--list--container">
+                <div className="homeFoundations--list">
+                    <div key={foundations[(pageCounter * 3)-3].id} className="homeFoundations--list--item">
+                        <div className="homeFoundations--list--name--container">
+                            <h2 className="homeFoundations--list--name">
+                                {foundations[(pageCounter * 3)-3].name}
+                            </h2>
+                            <p className="homeFoundations--list--aim">
+                                {foundations[(pageCounter * 3)-3].aim}
+                            </p>
+                        </div>
+                        <p className="homeFoundations--list--needs">
+                            {foundations[(pageCounter * 3)-3].needs}
                         </p>
                     </div>
-                    <p className="homeFoundations--list--needs">
-                        {foundations[(pageCounter * 3)-3].needs}
-                    </p>
+                    {foundations[(pageCounter * 3)-2]&&<div key={foundations[(pageCounter * 3)-2].id} className="homeFoundations--list--item">
+                        <div className="homeFoundations--list--name--container">
+                            <h2 className="homeFoundations--list--name">
+                                {foundations[(pageCounter * 3)-2].name}
+                            </h2>
+                            <p className="homeFoundations--list--aim">
+                                {foundations[(pageCounter * 3)-2].aim}
+                            </p>
+                        </div>
+                        <p className="homeFoundations--list--needs">
+                            {foundations[(pageCounter * 3)-2].needs}
+                        </p>
+                    </div>}
+                    {foundations[(pageCounter * 3)-1]&&<div key={foundations[(pageCounter * 3)-1].id} className="homeFoundations--list--item">
+                        <div className="homeFoundations--list--name--container">
+                            <h2 className="homeFoundations--list--name">
+                                {foundations[(pageCounter * 3)-1].name}
+                            </h2>
+                            <p className="homeFoundations--list--aim">
+                                {foundations[(pageCounter * 3)-1].aim}
+                            </p>
+                        </div>
+                        <p className="homeFoundations--list--needs">
+                            {foundations[(pageCounter * 3)-1].needs}
+                        </p>
+                    </div>}
                 </div>
-                {foundations[(pageCounter * 3)-2]&&<div key={foundations[(pageCounter * 3)-2].id} className="homeFoundations--list--item">
-                    <div className="homeFoundations--list--name--container">
-                        <h2 className="homeFoundations--list--name">
-                            {foundations[(pageCounter * 3)-2].name}
-                        </h2>
-                        <p className="homeFoundations--list--aim">
-                            {foundations[(pageCounter * 3)-2].aim}
-                        </p>
-                    </div>
-                    <p className="homeFoundations--list--needs">
-                        {foundations[(pageCounter * 3)-2].needs}
-                    </p>
-                </div>}
-                {foundations[(pageCounter * 3)-1]&&<div key={foundations[(pageCounter * 3)-1].id} className="homeFoundations--list--item">
-                    <div className="homeFoundations--list--name--container">
-                        <h2 className="homeFoundations--list--name">
-                            {foundations[(pageCounter * 3)-1].name}
-                        </h2>
-                        <p className="homeFoundations--list--aim">
-                            {foundations[(pageCounter * 3)-1].aim}
-                        </p>
-                    </div>
-                    <p className="homeFoundations--list--needs">
-                        {foundations[(pageCounter * 3)-1].needs}
-                    </p>
-                </div>}
+                {foundations.length > 3 &&
+                <div className="pagination">
+                    {pagination()}
 
-
-
-
-
+                </div>
+                }
             </div>
-            {foundations.length > 3 &&
-            <div className="pagination">
-                {pagination()}
-
-            </div>
-            }
-
-
-
-
-
-
-
         </div>
+
+
     );
 
 }

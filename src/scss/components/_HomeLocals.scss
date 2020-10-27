@@ -1,0 +1,62 @@
+.homeLocals{
+  &--container {
+    width: 80%;
+    margin: 0 auto;
+
+  }
+  &--info{
+    margin: 30px auto;
+    text-align: center;
+    max-width: 50%;
+  }
+  &--list--container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  &--list{
+    align-self: normal;
+
+    &--item{
+      font-family: $font-alt;
+      margin: 15px auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+      width:80%;
+      color: $color-5;
+      border-bottom: 1px solid $color-4;
+      padding-bottom: 15px;
+    }
+    &--name{
+      font-size: 1.3rem;
+      font-weight: lighter;
+    }
+    &--aim{
+      font-weight: lighter;
+      font-style: italic;
+      font-size: 0.8rem;
+    }
+    &--needs{
+      font-weight: lighter;
+      font-size: 0.8rem;
+      align-self: flex-end;
+    }
+  }
+  &--list--page {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: none;
+    background: none;
+    padding: 5px;
+
+    &:hover, :active {
+      cursor: pointer;
+      background: white;
+      border: 1px solid $color-4;
+
+    }
+  }
+}

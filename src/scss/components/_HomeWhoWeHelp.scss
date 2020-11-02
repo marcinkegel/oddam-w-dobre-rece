@@ -13,6 +13,9 @@
   &--options--item{
     margin: 0 0 4vh 20px;
     padding: 20px 40px;
+    &:hover {
+      cursor: pointer;
+    }
 
   }
 }

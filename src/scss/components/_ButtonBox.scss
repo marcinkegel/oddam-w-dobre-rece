@@ -9,8 +9,9 @@
   text-align: center;
   &:hover {
     cursor: pointer;
-    border: 2px solid $color-4;
+    border: 1px solid black ;
     transition: $transition-basic;
+    background-color: $color-main;
   }
 
 }

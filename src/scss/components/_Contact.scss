@@ -57,6 +57,9 @@
       margin-top: 30px;
       margin-left: 400px;
       padding: 10px 20px;
+      &:hover {
+        cursor: pointer;
+      }
     }
     &--sent{
       color: lighten(green, 10%);

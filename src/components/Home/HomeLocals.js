@@ -91,7 +91,7 @@ const HomeLocals = () => {
 
     return (
         <div className="homeLocals--container">
-            <div className="homeLocals--info">W naszej bazie znajdziesz listę zweryfikowanych Lokalnych działaczy, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują. </div>
+            <div className="homeLocals--info">W naszej bazie znajdziesz listę zweryfikowanych lokalnych działaczy, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują. </div>
             <div className="homeLocals--list--container">
                 <div className="homeLocals--list">
                     {(locals.length > 0) && displayLocals()}

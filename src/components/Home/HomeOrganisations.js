@@ -109,7 +109,7 @@ const HomeOrganisations = () => {
 
     return (
         <div className="homeOrganisations--container">
-            <div className="homeOrganisations--info">W naszej bazie znajdziesz listę zweryfikowanych Organizacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują. </div>
+            <div className="homeOrganisations--info">W naszej bazie znajdziesz listę zweryfikowanych organizacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują. </div>
             <div className="homeOrganisations--list--container">
                 <div className="homeOrganisations--list">
                     {(organisations.length > 0) && displayOrganisations()}

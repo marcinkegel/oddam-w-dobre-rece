@@ -28,6 +28,9 @@
       color: $color-5;
       border-bottom: 1px solid $color-4;
       padding-bottom: 15px;
+      &:last-of-type {
+        border: none;
+      }
     }
     &--name{
       font-size: 1.3rem;
